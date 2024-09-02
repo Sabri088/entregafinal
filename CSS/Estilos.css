@@ -21,14 +21,15 @@ body{
  }
 
 .cajalogo{
+display: grid;
 grid-area: logoymenu;
 background-color: white;
-justify-content: center;
-align-content: center;
+justify-content: space-between;
+
+
 }
 
  .logoinicio{
-    grid-area: logoymenu;
     width: 16rem;
     height: 6.5rem;
     margin-bottom: 0.8rem;
@@ -48,9 +49,15 @@ align-content: center;
     border-radius: 10px;
     border: 0 solid #58118f;
     margin-bottom:5px;
+
     
 }
 
+.parrafonosotros{
+    width: 90%;
+    margin: 0.5rem;
+    text-align: center;
+}
 
 h1{   font-family: "Quicksand", sans-serif;
     color:#04167f;
@@ -82,29 +89,36 @@ h4{
     text-align: center;
     
 }
-.botones{
-    text-decoration: none;
+.botones{ 
     font-family: "quicksand", san-serif;
     font-size: 0.9rem;
     background-color: #58118f;
     color: white;
-    border-radius: 10rem;
-    width: 4.5rem;
     height: 2rem;
-
+    width: 5rem;
+    border-radius: 1rem;
+    border: none;
+    margin: 1rem;
+    padding: 0.3rem;
+    text-align: center;
+    text-decoration: none;
+        
 }
 
+.botonesmenu{
+    margin: 1rem;
+}
 footer{
     text-align: center;
     background-color: white;
-    margin:0rem;
+    margin:1rem;
     width: 100%;
-      padding: 2rem;
+    padding: 1rem;
       }
       
 
 .contenidofooter {
-    margin-top: 1rem;
+    margin: 1rem;
 
 }
 
@@ -115,7 +129,7 @@ p{
         margin-top: 0.2rem;
     }
 
-    .infofooter{
+.infofooter{
         
         font-family: "mulish", sans-serif;
         font-size: 0.8rem;
@@ -123,6 +137,11 @@ p{
         margin-top: 0.2rem;
         text-decoration: none;
     }
+
+.parrafonosotros{
+    margin-top: 2rem;
+}
+
 
 .cajafiltro{
     display: flex;
@@ -146,6 +165,7 @@ p{
 
 
   .mainalquileres{
+    display: grid;
     grid-area: main;
     display: flex;
    flex-direction: column;
@@ -156,49 +176,72 @@ p{
    align-items: center;
 }
 
-.botonesvolver{
-    text-decoration: none;
-    font-family: "quicksand", san-serif;
-    font-size: 0.9rem;
-    background-color: #58118f;
-    color: white;
-    border-radius: 10rem;
-    padding: 0.5rem;
-    width: 7rem;
-    height: 1rem;
-    text-align: center;}
 
 
 
-    .maincontacto{
-        margin: 1rem;
-
-
+.maincontacto{
+    display: grid;
+    grid-area: main;
+       
     }
 
+.botonesvolver{
+        text-decoration: none;
+        font-family: "quicksand", san-serif;
+        font-size: 0.9rem;
+        background-color: #58118f;
+        color: white;
+        border-radius: 10rem;
+        padding: 0.5rem;
+        width: 7rem;
+        height: 1rem;
+        text-align: center;
+        }
 
-/*no me toma cambios - tampoco me toman siemplre los justify y align */
-  
+
 
 @media (min-width: 450px) {
-
     .cajalogo {
         width: 100%;
-    }
+        display: flex;
+       justify-content: space-between;
+       align-items: center;
+        }
+
     .footer {
         width: 80%;
+    
     }
-    .botonesmenu {
-        display: flex;
-        justify-content: space-around; 
-        justify-content: left;
-        border: none;
+
+
+.botonesmenu {
+    display: flex;
+    border: none;
+    flex-direction: row;
+
     }
 
     .menu {
         margin: 1px;
         }
-}
 
+
+
+} 
+
+@media (min-width: 600px){
+    .cajafiltro {
+        width: 12rem;
+        margin: 0.3rem;
+    }
+
+    .filtrosall{
+        display: flex;
+        flex-wrap: wrap;
+}
+  
+    
+}
+ 
     
 
