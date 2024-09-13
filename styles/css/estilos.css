@@ -1,0 +1,207 @@
+h1 {
+  font-family: "Quicksand", sans-serif;
+  color: #04167f;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Quicksand", sans-serif;
+  color: #04167f;
+  font-size: 1.1rem;
+}
+
+h3 {
+  font-family: "Quicksand", sans-serif;
+  color: #04167f;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+label {
+  font-family: "Mulish", sans-serif;
+  font-size: 0.7rem;
+  text-align: center;
+  margin: 0px;
+  padding: 0rem;
+}
+
+h4 {
+  font-family: "quicksand", san-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+p {
+  font-family: "mulish", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+.botonbase, .botones, .botonesvolver {
+  text-align: center;
+  text-decoration: none;
+  font-family: "quicksand", sans-serif;
+  font-size: 0.9rem;
+  background-color: #58118f;
+  color: rgb(255, 255, 255);
+}
+
+.imageninmueble {
+  height: 10rem;
+  width: 10rem;
+  padding: 1rem;
+  margin: 0px;
+  display: inline-block;
+}
+
+.botonesvolver {
+  border-radius: 10rem;
+  height: 1rem;
+  width: 7rem;
+  padding: 0.5rem;
+  margin: 0px;
+}
+
+.botones {
+  height: 2rem;
+  width: 5rem;
+  padding: 0.3rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+* {
+  margin: 0;
+  Padding: 0;
+  box-sizing: Box-sizing;
+}
+
+body {
+  background-color: #edebeb;
+}
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 1fr 0.2fr;
+  grid-template-areas: "logoymenu" "main" "footer";
+  gap: 1rem;
+  justify-items: center;
+}
+
+.cajalogo {
+  display: grid;
+  grid-area: logoymenu;
+  background-color: white;
+  justify-content: space-between;
+}
+.cajalogo .logoinicio {
+  width: 16rem;
+  height: 6.5rem;
+  margin-bottom: 0.8rem;
+}
+.cajalogo .botonesmenu {
+  margin: 1rem;
+}
+.cajalogo .botonesmenu .menu {
+  display: flex;
+  font-family: "quicksand", san-serif;
+  font-size: 0.8rem;
+  text-decoration: none;
+  background-color: #58118f;
+  color: white;
+  padding: 0.3rem;
+  border-radius: 10px;
+  border: 0 solid #58118f;
+  margin-bottom: 5px;
+}
+
+.mainalquileres {
+  display: grid;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+}
+.mainalquileres .card {
+  display: flex;
+  align-items: center;
+}
+
+.maincontacto {
+  display: grid;
+  grid-area: main;
+}
+
+.parrafonosotros {
+  width: 90%;
+  margin: 0.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cajafiltro {
+  display: flex;
+  width: 290px;
+  background-color: rgba(193, 190, 196, 0.2941176471);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  flex-direction: column;
+}
+
+footer {
+  text-align: center;
+  background-color: white;
+  margin: 1rem;
+  width: 100%;
+}
+footer .contenidofooter {
+  margin: 1rem;
+}
+footer .contenidofooter .logofooter {
+  width: 12rem;
+  height: 5rem;
+}
+footer .contenidofooter .infofooter {
+  font-family: "mulish", sans-serif;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  text-decoration: none;
+}
+
+@media (min-width: 450px) {
+  .cajalogo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer {
+    width: 80%;
+  }
+  .botonesmenu {
+    display: flex;
+    border: none;
+    flex-direction: row;
+  }
+  .menu {
+    margin: 1px;
+  }
+}
+@media (min-width: 600px) {
+  .cajafiltro {
+    width: 12rem;
+    margin: 0.3rem;
+  }
+  .filtrosall {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

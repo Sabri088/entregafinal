@@ -1,0 +1,6 @@
+@mixin boxmodelmedidas($alto,$ancho,$padding,$margin) {
+    height: $alto;
+    width: $ancho;
+    padding: $padding;
+    margin: $margin;
+}

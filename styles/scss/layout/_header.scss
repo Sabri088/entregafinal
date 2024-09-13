@@ -1,0 +1,57 @@
+
+.gridcontainer{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.20fr 1fr 0.2fr;
+    grid-template-areas:
+    "logoymenu"
+    "main"
+    "footer";
+    gap: 1rem;
+    justify-items: center;
+        
+ 
+
+
+
+}
+
+.cajalogo{
+    display: grid;
+    grid-area: logoymenu;
+    background-color: white;
+    justify-content: space-between;
+
+    .logoinicio{
+        width: 16rem;
+        height: 6.5rem;
+        margin-bottom: 0.8rem;
+    } 
+    .botonesmenu{
+        margin: 1rem;
+        
+        .menu {    
+            display: flex;
+            font-family: "quicksand", san-serif;
+            font-size: 0.8rem;
+            text-decoration: none;
+            background-color: $colorsecundario;
+            color: white;
+            padding: 0.3rem;
+            border-radius: 10px;
+            border: 0 solid $colorsecundario;
+            margin-bottom:5px;
+            
+        }
+    
+    }
+
+    }
+
+  
+
+
+    
+
+
+

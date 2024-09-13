@@ -1,0 +1,39 @@
+.mainalquileres{
+    display: grid;
+    grid-area: main;
+    display: flex;
+   flex-direction: column;
+
+   .card {
+    display: flex;
+   align-items: center;
+}
+     }
+
+
+
+
+.maincontacto{
+    display: grid;
+    grid-area: main;
+       
+    }
+
+.parrafonosotros{
+        width: 90%;
+        margin: 0.5rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    
+    .cajafiltro{
+        display: flex;
+        width: 290px;
+        background-color:#c1bec44b ;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        flex-direction: column;
+    }
