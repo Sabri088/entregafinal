@@ -1,16 +1,14 @@
-
-
 .botonesvolver{
     @extend .botonbase;
     border-radius: 10rem;
     @include boxmodelmedidas(1rem,7rem,0.5rem,0px);
     }
 
-    .botones{ 
-        @extend .botonbase;
-        @include boxmodelmedidas (2rem,5rem,0.3rem,1rem);
-        border-radius: 1rem;
-        border: none;           
+.botones{ 
+    @extend .botonbase;
+    @include boxmodelmedidas(2rem,5rem,0.3rem,1rem);
+    border-radius: 1rem;
+    border: none;           
     }
 
 
