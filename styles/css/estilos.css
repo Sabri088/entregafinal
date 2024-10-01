@@ -3,6 +3,7 @@ h1 {
   color: #04167f;
   font-size: 1.1rem;
   text-align: center;
+  margin: 1rem;
 }
 
 h2 {
@@ -50,22 +51,28 @@ p {
 
 .imageninmueble {
   height: 10rem;
-  width: 10rem;
+  width: 100%;
   padding: 1rem;
   margin: 0px;
   display: inline-block;
+  object-fit: cover;
+}
+
+.imagennosotros {
+  width: 13rem;
+  height: 10rem;
 }
 
 .botonesvolver {
   border-radius: 10rem;
-  height: 1rem;
+  height: 1.5rem;
   width: 7rem;
-  padding: 0.5rem;
+  padding: 0rem;
   margin: 0px;
 }
 
 .botones {
-  height: 2rem;
+  height: 1.5rem;
   width: 5rem;
   padding: 0.3rem;
   margin: 1rem;
@@ -133,6 +140,15 @@ body {
 .maincontacto {
   display: grid;
   grid-area: main;
+  width: 90%;
+}
+
+.contenedornosotros {
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .parrafonosotros {
@@ -151,6 +167,10 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
   flex-direction: column;
+}
+
+.card {
+  min-height: 20rem;
 }
 
 footer {
@@ -175,12 +195,6 @@ footer .contenidofooter .infofooter {
 }
 
 @media (min-width: 450px) {
-  .cajalogo {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
   .footer {
     width: 80%;
   }
@@ -193,7 +207,13 @@ footer .contenidofooter .infofooter {
     margin: 1px;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 680px) {
+  .cajalogo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   .cajafiltro {
     width: 12rem;
     margin: 0.3rem;
@@ -201,6 +221,11 @@ footer .contenidofooter .infofooter {
   .filtrosall {
     display: flex;
     flex-wrap: wrap;
+  }
+  .contenedornosotros {
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
   }
 }
 

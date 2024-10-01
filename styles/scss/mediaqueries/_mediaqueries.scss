@@ -1,11 +1,5 @@
 @media (min-width: 450px) {
-    .cajalogo {
-        width: 100%;
-        display: flex;
-       justify-content: space-between;
-       align-items: center;
-        }
-
+   
     .footer {
         width: 80%;
     }
@@ -22,7 +16,15 @@
         }
 } 
 
-@media (min-width: 600px){
+@media (min-width: 680px){
+
+    .cajalogo {
+        width: 100%;
+        display: flex;
+       justify-content: space-between;
+       align-items: center;
+        }
+
     .cajafiltro {
         width: 12rem;
         margin: 0.3rem;
@@ -31,6 +33,12 @@
     .filtrosall{
         display: flex;
         flex-wrap: wrap;
+}
+
+.contenedornosotros{
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
 }
   
 }

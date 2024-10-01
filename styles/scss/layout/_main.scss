@@ -15,8 +15,17 @@
 .maincontacto{
     display: grid;
     grid-area: main;
-       
+    width: 90%;       
     }
+
+  .contenedornosotros{
+        margin: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
 
 .parrafonosotros{
         width: 90%;
@@ -25,6 +34,7 @@
         margin-top: 2rem;
     }
 
+ 
     
     .cajafiltro{
         display: flex;
@@ -35,4 +45,8 @@
         padding-top: 1rem;
         padding-bottom: 1rem;
         flex-direction: column;
+    }
+
+    .card{
+        min-height: 20rem;
     }
